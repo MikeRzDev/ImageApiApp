@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.kogi.imageapiapp.ui.fragment.ShowcaseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Publish Date:"
+            android:id="@+id/textView_dateTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#f44336" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView_date"
+            android:layout_above="@+id/textView_author"
+            android:layout_toRightOf="@+id/textView_dateTitle"
+            android:layout_toEndOf="@+id/textView_dateTitle"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Author:"
+            android:id="@+id/textView_authorTitle"
+            android:layout_below="@+id/textView_dateTitle"
+            android:layout_alignLeft="@+id/textView_dateTitle"
+            android:layout_alignStart="@+id/textView_dateTitle"
+            android:textSize="16sp"
+            android:textColor="#f44336" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView_author"
+            android:layout_below="@+id/textView_dateTitle"
+            android:layout_toRightOf="@+id/textView_authorTitle"
+            android:layout_toEndOf="@+id/textView_authorTitle"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tag:"
+            android:id="@+id/textView_tagTitle"
+            android:layout_below="@+id/textView_authorTitle"
+            android:layout_alignLeft="@+id/textView_authorTitle"
+            android:layout_alignStart="@+id/textView_authorTitle"
+            android:textSize="16sp"
+            android:textColor="#f44336" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView_tags"
+            android:layout_alignTop="@+id/textView_tagTitle"
+            android:layout_toRightOf="@+id/textView_tagTitle"
+            android:layout_toEndOf="@+id/textView_tagTitle"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <com.jude.rollviewpager.RollPagerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82"
+        android:id="@+id/rollPagerView_main" />
+</LinearLayout>

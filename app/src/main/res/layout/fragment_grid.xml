@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.kogi.imageapiapp.ui.fragment.GridFragment">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:id="@+id/rollPagerView_main" />
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <GridView
+            android:numColumns="3"
+            android:id="@+id/gridView_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </com.cjj.MaterialRefreshLayout>
+
+</LinearLayout>

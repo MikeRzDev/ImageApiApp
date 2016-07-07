@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GaleriaBkna</string>
+    <string name="app_name_ptr">GaleriaBkna - HalaParaRefrescar</string>
+    <string name="publish_date">Fecha</string>
+    <string name="author">Autor</string>
+    <string name="tag">Etiqueta</string>
+    <string name="refresh_feed">Cargando Contenido</string>
+    <string name="profile">Perfil</string>
+    <string name="information">Informacion</string>
+    <string name="network_err_msg">Necesitas usar una conexion a internet (Wifi/Datos) para usar este app.</string>
+
+</resources>
